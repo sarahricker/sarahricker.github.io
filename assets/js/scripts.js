@@ -141,7 +141,7 @@ jQuery(function ($) {
                 //your configuration goes here
                 easing: 'easeOut',
                 delay: 3000,
-                barColor:'#68c3a3',
+                barColor:'#65c1e3',
                 trackColor:'rgba(255,255,255,0.2)',
                 scaleColor: false,
                 lineWidth: 8,
@@ -327,59 +327,205 @@ jQuery(function ($) {
     // -------------------------------------------------------------
 
     (function () {
-        var myLatlng = new google.maps.LatLng(41.372641, -74.687387);
+        var myLatlng = new google.maps.LatLng(30.231072, -97.766829);
 
             var styles = [
-                {
-                    featureType: "landscape",
-                    stylers: [
-                        { color: '#f7f7f7' }
-                    ]
-                },{
-                    featureType: "natural",
-                    stylers: [
-                        { hue: '#00ffe6' }
-                    ]
-                },{
-                    featureType: "road",
-                    stylers: [
-                        { hue: '#fff' },
-                        { saturation: -70 }
-                    ]
-                },{
-                    featureType: "building",
-                    elementType: "labels",
-                    stylers: [
-                        { hue: '' }
-                    ]
-                },{
-                    featureType: "poi", //points of interest
-                    stylers: [
-                        { hue: '' }
-                    ]
-                }
-            ];
-
+								{
+										"featureType": "water",
+										"elementType": "geometry",
+										"stylers": [
+												{
+														"color": "#65C1E3"
+												},
+												{
+														"lightness": 17
+												}
+										]
+								},
+								{
+										"featureType": "landscape",
+										"elementType": "geometry",
+										"stylers": [
+												{
+														"color": "#f5f5f5"
+												},
+												{
+														"lightness": 20
+												}
+										]
+								},
+								{
+										"featureType": "road.highway",
+										"elementType": "geometry.fill",
+										"stylers": [
+												{
+														"color": "#ffffff"
+												},
+												{
+														"lightness": 17
+												}
+										]
+								},
+								{
+										"featureType": "road.highway",
+										"elementType": "geometry.stroke",
+										"stylers": [
+												{
+														"color": "#ffffff"
+												},
+												{
+														"lightness": 29
+												},
+												{
+														"weight": 0.2
+												}
+										]
+								},
+								{
+										"featureType": "road.arterial",
+										"elementType": "geometry",
+										"stylers": [
+												{
+														"color": "#ffffff"
+												},
+												{
+														"lightness": 18
+												}
+										]
+								},
+								{
+										"featureType": "road.local",
+										"elementType": "geometry",
+										"stylers": [
+												{
+														"color": "#ffffff"
+												},
+												{
+														"lightness": 16
+												}
+										]
+								},
+								{
+										"featureType": "poi",
+										"elementType": "geometry",
+										"stylers": [
+												{
+														"color": "#f5f5f5"
+												},
+												{
+														"lightness": 21
+												}
+										]
+								},
+								{
+										"featureType": "poi.park",
+										"elementType": "geometry",
+										"stylers": [
+												{
+														"color": "#dedede"
+												},
+												{
+														"lightness": 21
+												}
+										]
+								},
+								{
+										"elementType": "labels.text.stroke",
+										"stylers": [
+												{
+														"visibility": "on"
+												},
+												{
+														"color": "#ffffff"
+												},
+												{
+														"lightness": 16
+												}
+										]
+								},
+								{
+										"elementType": "labels.text.fill",
+										"stylers": [
+												{
+														"saturation": 36
+												},
+												{
+														"color": "#333333"
+												},
+												{
+														"lightness": 40
+												}
+										]
+								},
+								{
+										"elementType": "labels.icon",
+										"stylers": [
+												{
+														"visibility": "off"
+												}
+										]
+								},
+								{
+										"featureType": "transit",
+										"elementType": "geometry",
+										"stylers": [
+												{
+														"color": "#f2f2f2"
+												},
+												{
+														"lightness": 19
+												}
+										]
+								},
+								{
+										"featureType": "administrative",
+										"elementType": "geometry.fill",
+										"stylers": [
+												{
+														"color": "#fefefe"
+												},
+												{
+														"lightness": 20
+												}
+										]
+								},
+								{
+										"featureType": "administrative",
+										"elementType": "geometry.stroke",
+										"stylers": [
+												{
+														"color": "#fefefe"
+												},
+												{
+														"lightness": 17
+												},
+												{
+														"weight": 1.2
+												}
+										]
+								}
+						]
             var mapOptions = {
-                zoom: 15,
+                zoom: 11,
                 scrollwheel: false,
                 center: myLatlng,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
-                disableDefaultUI: true,
+                disableDefaultUI: false,
+                mapTypeControl: false,
+                streetViewControl: false,
                 styles: styles
+
             }
             var map = new google.maps.Map(document.getElementById('mapCanvas'), mapOptions);
-
             var marker = new google.maps.Marker({
-                position: myLatlng,
-                map: map,
-                animation: google.maps.Animation.DROP,
-                title: 'Hello World!'
-            });
-
-            var contentString = '' +
-                    '' +
-                    '';
+							position: myLatlng,
+							icon: 'assets/images/ico/map-marker.png',
+							map: map,
+							animation: google.maps.Animation.DROP,
+              title: 'Austin, TX'
+						});
+            var contentString = '<strong>Currently Working out of:</strong>' +
+                    "<em>South Austin</em>";
 
             var infowindow = new google.maps.InfoWindow({
                 content: contentString
