@@ -1144,7 +1144,6 @@ Resume Timeline
     overflow: hidden;
 }
 
-
 /* Shuffle Filter*/
 #filter {
     margin: 0 0 35px;
@@ -1303,7 +1302,39 @@ Resume Timeline
   opacity: 0;
 }
 
+/* === Work Detail === */
 
+#work-hero {
+	background: url(../images/custom/pexels-photo.jpg) no-repeat center center;
+	-webkit-background-attachment: fixed;
+  background-attachment: fixed;
+	background-color: #222;
+	background-size: cover;
+	padding: 0;
+	position: relative;
+}
+#work-hero:before {
+	content: "";
+	background-color: rgba(26, 30, 35, 0.85);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.logo img {
+    max-width: 90%;
+    height: auto !important;
+}
+
+.detail-works, .detail-works-img {
+    margin-bottom: 40px;
+}
+.detail-works .btn {
+    padding: 9px 74px;
+    margin-right:0;
+}
 
 
 /* === Facts Section === */
