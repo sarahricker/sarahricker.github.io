@@ -1542,7 +1542,7 @@ Icon for all respective meta
 }
 
 .contact-form textarea.form-control {
-    height: 115px;
+    height: 155px;
 }
 
 .contact-form .btn {
@@ -1568,7 +1568,6 @@ Icon for all respective meta
 .location-map {
     padding: 4px;
     border: 1px solid #eee;
-    border-bottom: 3px double #eee;
 }
 .map-canvas {
     height: 350px;
