@@ -1023,7 +1023,7 @@ Resume Timeline
     font-size: 18px;
     font-weight: 400;
     margin-top: -6px;
-    text-transform: capitalize;
+    text-transform: initial;
 }
 
 
@@ -1049,6 +1049,7 @@ Resume Timeline
     position: absolute;
     top: -20px;
     right: 15px;
+    display:none;
 }
 
 .progress .progress-bar.six-sec-ease-in-out {
@@ -1085,7 +1086,7 @@ Resume Timeline
     display: inline-block;
     width: 140px;
     height: 140px;
-    margin: 40px auto;
+    margin: 40px auto 10px;
     text-align: center;
 }
 .chart canvas {
@@ -1101,6 +1102,7 @@ Resume Timeline
     font-size: 25px;
     font-weight: 500;
     text-align: center;
+    display: none;
 }
 
 .percent:after {
@@ -1115,6 +1117,13 @@ Resume Timeline
     margin-top: 20px;
 }
 
+.chart-text {
+    position: absolute;
+    top: 21px;
+    left: 0;
+    width: 100%;
+}
+
 /*.percent:after {content: '%';margin-left: 0.1em;font-size: .8em;}*/
 .angular{margin-top:100px;}
 .angular .chart {margin-top:0;}
@@ -1122,8 +1131,8 @@ Resume Timeline
 
 
 
-/* === Work Section === */
-.works-section {
+/* === Portfolio Section === */
+.portfolio-section {
     background-color: #f7f7f7;
 }
 .portfolio-item {
@@ -1327,11 +1336,11 @@ Resume Timeline
     max-width: 90%;
     height: auto !important;
 }
-.detail-works, .detail-works-img {
+.detail-portfolio, .detail-portfolio-img {
     max-width: 800px;
     margin: 0 auto 40px;
 }
-.detail-works .btn {
+.detail-portfolio .btn {
     padding: 9px 74px;
     margin-right:0;
 }
