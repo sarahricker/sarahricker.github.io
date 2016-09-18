@@ -1152,6 +1152,22 @@ Resume Timeline
     position: relative;
     overflow: hidden;
 }
+figure img.mfp-img {
+	max-width:1000px;
+}
+figure img.mfp-img:hover {
+	cursor:initial;
+}
+figure .mfp-title {
+    padding-right: 0;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.mfp-figure:after {
+    box-shadow: none;
+    background: none;
+}
 
 /* Shuffle Filter*/
 #filter {
@@ -1388,6 +1404,7 @@ Resume Timeline
 .figure {
     position: relative;
 }
+
 .figure i{
     position: absolute;
     bottom: -8px;
