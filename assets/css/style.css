@@ -1568,7 +1568,7 @@ Icon for all respective meta
 }
 
 .contact-form textarea.form-control {
-    height: 155px;
+    height: 173px;
 }
 
 .contact-form .btn {
@@ -1586,7 +1586,7 @@ Icon for all respective meta
     overflow: hidden;
     line-height: 30px;
     font-weight: 400;
-    margin-bottom: 45px
+    margin-bottom: 3px;
 }
 
 
