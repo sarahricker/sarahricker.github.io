@@ -795,7 +795,7 @@ Resume Timeline
 }
 
 .timeline-content{
-    padding:5px 20px 0 20px;
+    padding:5px 20px 20px 20px;
 }
 
 
@@ -865,10 +865,22 @@ Resume Timeline
 }
 
 
+.timeline>li:before, .timeline>li:after,
+.resume:before, .resume:after,
+.timeline:before {
+	display:none;
+}
 
 
 
 @media(min-width:992px) {
+
+.timeline>li:before, .timeline>li:after,
+.resume:before, .resume:after,
+.timeline:before {
+	display:block;
+}
+
 .timeline:before {
     left: 50%;
 }
