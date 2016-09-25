@@ -1563,8 +1563,8 @@ Icon for all respective meta
 
 .hire-section .btn {
     padding: 9px 54px;
+    margin-right:0;
 }
-
 
 /* === Contact Section === */
 .contact-section  {
