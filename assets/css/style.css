@@ -1271,15 +1271,26 @@ figure .mfp-title {
     transform: translate(0,-50px);
 }
 
+.links a {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
 .links a i{
     position: relative;
-    color: #65C1E3;
+    color: #fff;
     font-size: 16px;
-    margin: 0 13px;
+    margin: 0 auto 20px;
     z-index: 100;
+    display: block;
+    width: 15px;
+}
+.links .link-text {
+    display: block;
+    text-align: center;
 }
 .links a:hover i {
-   color:  #fff;
+   color: #65C1E3;
 }
 .links a i::after{
     position: absolute;
@@ -1289,6 +1300,7 @@ figure .mfp-title {
     width: 30px;
     height: 30px;
     border: 1px solid #65C1E3;
+    background-color: #65C1E3;
     z-index: -1;
     border-radius: 3px;
     -webkit-transform: rotate(45deg);
@@ -1298,7 +1310,8 @@ figure .mfp-title {
             transform: rotate(45deg);
 }
 .links a:hover i::after {
-    background-color: #65C1E3;
+    background-color: #ffffff;
+    border-color: #ffffff;
 }
 
 .portfolio-info {
