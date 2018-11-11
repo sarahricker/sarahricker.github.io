@@ -318,7 +318,7 @@ ul.list-check li::before {
 /* === HOME === */
 @media (max-width : 640px) {
     .tt-fullHeight{
-        height: 560px !important;
+/*         height: 560px !important; */
     }
 }
 
@@ -380,6 +380,22 @@ ul.list-check li::before {
 	margin-bottom: 20px;
 }
 
+.intro-boxes {
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.intro-boxes .box {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+}
+
+.box strong {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
 /*
 SOCIAL ICON
 -------------------------------------------*/
@@ -390,7 +406,7 @@ SOCIAL ICON
     position: relative;
     color: #fff;
     font-size: 18px;
-    margin: 0 7px;
+    margin: 0 12px;
     line-height: 40px;
     text-align: center;
     width: 40px;
@@ -530,6 +546,7 @@ SOCIAL ICON
 .navbar-custom .navbar-brand {
     font-weight: 700;
     font-size: 18px;
+    padding: 20px;
 }
 .navbar-brand span {
     color: #1a1e23;

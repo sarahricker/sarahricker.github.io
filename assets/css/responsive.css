@@ -1,16 +1,39 @@
-/* Extra small devices (phones, less than 768px) */
-@media (max-width : 766px) {
-	.intro h1 {
-		font-size: 40px;
-		line-height: 40px;
-	}
+/* Extra Extra small devices (phones, less than 500px) */
+@media (max-width: 500px) {
 
+    .navbar-custom .navbar-brand {
+        font-size: 17px;
+    }
+
+    .intro-boxes {
+        margin: 0;
+    }
+    .intro-boxes .box {
+        width: 100%;
+    }
+    .box strong {
+        font-size: 16px;
+    }
+    .intro p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+/* Extra small devices (phones, less than 812px) */
+@media (max-width : 812px) {
+	.intro h1 {
+		font-size: 30px;
+		line-height: 30px;
+	}
+    .intro .intro-sub {
+        font-size: 20px;
+    }
+    .intro p {
+        margin: 10px;
+    }
 	.social-icons ul{
 		margin-left: 0;
-	}
-
-	.social-icons a i{
-		margin:0 5px;
 	}
 
 	.mouse-icon.jump-down{
@@ -20,7 +43,7 @@
 	.navbar-custom .navbar-brand,
 	.navbar-custom .navbar-nav > li > a,
 	.navbar-custom .navbar-nav .dropdown-menu > li > a {
-		padding:10px 15px;
+		padding: 15px;
 	}
 
 	.navbar-custom .dropdown-menu{
@@ -146,10 +169,10 @@
 }
 
 /* Landscape Mobile */
-@media only screen and (min-width : 480px) and (max-width : 767px) {
+@media only screen and (min-width : 480px) and (max-width : 812px) {
 	.intro h1 {
-		font-size: 60px;
-		line-height: 80px;
+		font-size: 50px;
+		line-height: 60px;
 	}
 
 	.social-icons ul{
@@ -164,14 +187,14 @@
 		margin:0 7px;
 	}
 
-	.mouse-icon{
-		display:none;
-	}
+    .mouse-icon.jump-down {
+        display: none;
+    }
 
 	.navbar-custom .navbar-brand,
 	.navbar-custom .navbar-nav > li > a,
 	.navbar-custom .navbar-nav .dropdown-menu > li > a {
-		padding:10px 15px;
+		padding: 15px;
 	}
 
 	.navbar-custom .dropdown-menu{
@@ -293,9 +316,9 @@
 
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width : 768px) and (max-width : 991px) {
+@media (min-width : 813px) and (max-width : 991px) {
 	.navbar-custom .navbar-brand{
-		padding: 10px 15px;
+		padding: 15px;
 	}
 
 	.navbar-custom .navbar-nav > li > a,
